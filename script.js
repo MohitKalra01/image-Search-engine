@@ -33,6 +33,9 @@ async function searchImages(){
         
     })
     searchMoreBtn.style.display = "block";
+    if (searchBox.value === ""){
+        searchMoreBtn.style.display = "none";
+    }
 
 }
 searchForm.addEventListener("submit",(e)=>{
